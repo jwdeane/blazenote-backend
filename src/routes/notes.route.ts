@@ -23,7 +23,7 @@ notes.get("/:id", async (ctx: ContextExtended) => {
 
 notes.post("/", async (ctx: ContextExtended) => {
   try {
-    const { id, title, description } = await ctx.req.json();
+    const { id = null, title, description } = await ctx.req.json();
     const db = ctx.env.DB;
     const response = await db
       .prepare(`INSERT INTO note (id, title, description) VALUES (?1, ?2, ?3)`)
