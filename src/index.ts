@@ -12,7 +12,7 @@ const app = new Hono();
 // Important! No trailing slash
 const allowedOrigins = new Set([
   "http://localhost:5173",
-  "https://<your-frontend-domain>.<tld>",
+  "https://https://blazenote-frontend-665.pages.dev/",
 ]);
 
 // https://hono.dev/docs/middleware/builtin/cors
@@ -31,7 +31,7 @@ app.use(
       "Access-Control-Allow-Headers",
       "Content-Type, Authorization, Cache-Control",
     ],
-  })
+  }),
 );
 
 app.get("/", (c) => {
