@@ -20,6 +20,7 @@ app.use(
   "*",
   cors({
     origin: (origin) => {
+      console.log(origin);
       if (allowedOrigins.has(origin)) {
         return origin; // Allow this origin
       }
