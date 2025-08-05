@@ -7,11 +7,11 @@ compatibility_flags = ["nodejs_compat"]
 pattern = "blazenote-api.cflr.dev"
 custom_domain = true
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<DATABASE ID>"
-# migrations_dir = "./migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "29edddae-fbb5-420e-9d5d-ead1e887091a"
+migrations_dir = "./migrations"
 
 # [ai]
 # binding = "AI"
