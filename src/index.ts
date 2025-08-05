@@ -12,7 +12,6 @@ const app = new Hono();
 // Important! No trailing slash
 const allowedOrigins = new Set([
   "http://localhost:5173",
-  "https://blazenote-frontend-665.pages.dev",
   "https://blazenote.cflr.dev",
 ]);
 
