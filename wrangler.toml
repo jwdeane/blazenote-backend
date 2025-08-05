@@ -1,7 +1,11 @@
 name = "blazenote-backend"
 main = "src/index.ts"
 compatibility_date = "2024-12-30"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern = "blazenote-api.cflr.dev"
+custom_domain = true
 
 # [[d1_databases]]
 # binding = "DB"

@@ -13,6 +13,7 @@ const app = new Hono();
 const allowedOrigins = new Set([
   "http://localhost:5173",
   "https://blazenote-frontend-665.pages.dev",
+  "https://blazenote.cflr.dev",
 ]);
 
 // https://hono.dev/docs/middleware/builtin/cors
@@ -20,7 +21,6 @@ app.use(
   "*",
   cors({
     origin: (origin) => {
-      console.log(origin);
       if (allowedOrigins.has(origin)) {
         return origin; // Allow this origin
       }
